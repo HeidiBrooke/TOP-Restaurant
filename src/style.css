@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     padding: 0px;
     margin: 0px;
+    height: 100vh;
 }
 
 #content {
     margin: 0px;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(43, 216, 255);
@@ -20,21 +21,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width: 600px;
 }
 
 #nav {
-    padding-top: 100px;
+    padding-top: 60px;
     font-size: 32px;
     text-transform: uppercase;
     width: 800px;
     display: flex;
     color: rgb(255, 54, 91);
-    gap: 40px;
+    gap: 24px;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 #mainPic {
@@ -45,6 +47,21 @@ body {
 }
 
 #mainImage {
-    width: 500px;
+    width: 700px;
     object-fit: cover;
+    padding-right: 22px;
+}
+
+#mainCopy {
+    padding-left: 18px;
+    font-size: 28px;
+    text-align: center;
+    /* color: rgb(183, 38, 64); */
+    color: rgb(255, 54, 91);
+    font-family: 'Courier Prime', monospace;
+    padding-bottom: 40px;
+}
+
+#footer {
+    padding-bottom: 20px;
 }

@@ -26,13 +26,19 @@ let contactTab = document.createElement('div');
 contactTab.textContent = 'contact';
 nav.appendChild(contactTab);
 
-// let mainPic = document.createElement('div');
-// mainPic.setAttribute('id', 'mainPic');
-// mainPic.textContent = 'I am here';
-// main.appendChild(mainPic);
-
 const myImage = new Image();
 myImage.src = mainImage;
 myImage.setAttribute('id', 'mainImage');
 
 main.appendChild(myImage);
+
+
+let mainCopy = document.createElement('div');
+mainCopy.setAttribute('id', 'mainCopy');
+mainCopy.textContent = 'Pie. Loved by all. Hand made in North Plains, Oregon since 2015.';
+main.appendChild(mainCopy);
+
+let footer = document.createElement('div');
+footer.setAttribute('id', 'footer');
+footer.textContent = 'Footer 2022 @footer Trademark-Footer';
+main.appendChild(footer);

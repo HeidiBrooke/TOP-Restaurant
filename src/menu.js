@@ -31,26 +31,69 @@ const menu = () => {
     menuGrid.setAttribute('id', 'menuGrid');
     main.appendChild(menuGrid);
 
+    createGridItem(9, menuGrid);
+
+    // let gridItem = document.createElement('div');
+    // gridItem.setAttribute('id', 'gridItem');
+    // menuGrid.appendChild(gridItem);
+
+    // const myImage = new Image();
+    // myImage.src = firstPie;
+    // myImage.setAttribute('id', 'menuItem');
+
+    // gridItem.appendChild(myImage);
+
+    // let pieDiscription = document.createElement('div');
+    // pieDiscription.setAttribute('id', 'menuCopy');
+    // pieDiscription.textContent = 'RazzleBerry Pie. $17 full. $10 personal. Blueberry, raspberry and blackberrys mixture inside a flakey buttery crust.';
+    // gridItem.appendChild(pieDiscription);
+
+    let footer = document.createElement('div');
+    footer.setAttribute('id', 'footer');
+    footer.textContent = 'Pie photos courtesy of Levi Guzman, Brooke Lark, and Anna Tukhfatullina on Unsplash';
+    main.appendChild(footer);
+    
+}
+
+const createGridItem = (num, div) => {
+    for (let i = 0; i < num; i++) {
+
     let gridItem = document.createElement('div');
     gridItem.setAttribute('id', 'gridItem');
-    menuGrid.appendChild(gridItem);
+    div.appendChild(gridItem);
 
+    let num = Math.floor(Math.random() * 3);
+    console.log(num);
+    let pic = firstPie;
+    let pieCopy = 'RazzleBerry Pie. $17 full. $10 personal. Blueberry, raspberry and blackberrys mixture inside a flakey buttery crust.';
+    if(num === 1){
+        pic = firstPie;
+        pieCopy = 'RazzleBerry Pie. $17 full. $10 personal. Blueberry, raspberry and blackberrys mixture inside a flakey buttery crust.';
+    }
+    else if (num === 2){
+        pic = redPie;
+        pieCopy = 'Banana Cream Pie. $17 full. $10 personal. Bananas, vanilla custard and a light cream filling.';
+    }
+    else {
+        pic = starPie;
+        pieCopy = 'Apple Pie. $17 full. $10 personal. Classic apple and cinnamon filling with a little extra tang.';
+    }
+    
     const myImage = new Image();
-    myImage.src = firstPie;
+    myImage.src = pic;
     myImage.setAttribute('id', 'menuItem');
 
     gridItem.appendChild(myImage);
 
     let pieDiscription = document.createElement('div');
     pieDiscription.setAttribute('id', 'menuCopy');
-    pieDiscription.textContent = 'RazzleBerry Pie. $17 full. $10 personal. Blueberry, raspberry and blackberrys mixture inside a flakey buttery crust.';
+    pieDiscription.textContent = pieCopy;
     gridItem.appendChild(pieDiscription);
 
-    let footer = document.createElement('div');
-    footer.setAttribute('id', 'footer');
-    footer.textContent = 'Footer 2022 @footer Trademark-Footer';
-    main.appendChild(footer);
-    
+    }
 }
+
+
+
 
 export default menu;

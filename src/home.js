@@ -38,7 +38,7 @@ const home = () => {
 
     let footer = document.createElement('div');
     footer.setAttribute('id', 'footer');
-    footer.textContent = 'Footer 2022 @footer Trademark-Footer';
+    footer.textContent = 'Pie photos courtesy of Levi Guzman, Brooke Lark, and Anna Tukhfatullina on Unsplash';
     main.appendChild(footer);
     
 }
